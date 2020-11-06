@@ -1599,10 +1599,7 @@ cfg_if! {
 }
 
 cfg_if! {
-    if #[cfg(target_env = "uclibc")] {
-        mod uclibc;
-        pub use self::uclibc::*;
-    } else if #[cfg(target_env = "newlib")] {
+    if #[cfg(target_env = "newlib")] {
         mod newlib;
         pub use self::newlib::*;
     } else if #[cfg(any(target_os = "linux",
