@@ -885,8 +885,6 @@ pub const PTRACE_INTERRUPT: ::c_uint = 0x4207;
 pub const PTRACE_LISTEN: ::c_uint = 0x4208;
 pub const PTRACE_PEEKSIGINFO: ::c_uint = 0x4209;
 
-pub const EPOLLWAKEUP: ::c_int = 0x20000000;
-
 // linux/rtnetlink.h
 pub const TCA_PAD: ::c_ushort = 9;
 pub const TCA_DUMP_INVISIBLE: ::c_ushort = 10;
